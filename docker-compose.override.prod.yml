@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  flask-api:
+    image: medtrainer/flask-api:prod
+    container_name: flask-api
+    build:
+      target: prod
+    environment:
+      - ENVIRONMENT=production
+      - FLASK_ENV=production
+    entrypoint: ["python", "-m", "flask", "run", "-h", "0.0.0.0", "-p", "5000"]
