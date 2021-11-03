@@ -1,4 +1,4 @@
-# microservice-skeleton-python
+# Flask-api skeleton
 A MedTrainer project to provide an standardized setup for PYTHON based projects. It is based in docker and docker-compose.
 
 ## Local usage
