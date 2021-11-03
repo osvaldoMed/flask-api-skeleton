@@ -6,6 +6,8 @@ services:
     container_name: flask-api
     build:
       target: test
+    volumes:
+      - .:/app
     environment:
       - ENVIRONMENT=test
     entrypoint: ["python", "-m", "pytest"]
